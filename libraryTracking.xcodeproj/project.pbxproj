@@ -10,6 +10,7 @@
 		531AF6C0206AF5530016776D /* libraryTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531AF6B6206AF5530016776D /* libraryTracking.framework */; };
 		531AF6C5206AF5530016776D /* libraryTrackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF6C4206AF5530016776D /* libraryTrackingTests.swift */; };
 		531AF6C7206AF5530016776D /* libraryTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 531AF6B9206AF5530016776D /* libraryTracking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		531AF6D3206AFD850016776D /* libraryTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AF6D2206AFD850016776D /* libraryTracking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		531AF6BF206AF5530016776D /* libraryTrackingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = libraryTrackingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		531AF6C4206AF5530016776D /* libraryTrackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libraryTrackingTests.swift; sourceTree = "<group>"; };
 		531AF6C6206AF5530016776D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		531AF6D2206AFD850016776D /* libraryTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = libraryTracking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				531AF6B9206AF5530016776D /* libraryTracking.h */,
 				531AF6BA206AF5530016776D /* Info.plist */,
+				531AF6D2206AFD850016776D /* libraryTracking.swift */,
 			);
 			path = libraryTracking;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					531AF6B5206AF5530016776D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					531AF6BE206AF5530016776D = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				531AF6D3206AFD850016776D /* libraryTracking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		531AF6CB206AF5530016776D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.josephslack.libraryTracking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		531AF6CC206AF5530016776D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		531AF6CE206AF5530016776D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CAS8L34VEY;
 				INFOPLIST_FILE = libraryTrackingTests/Info.plist;
@@ -390,6 +399,7 @@
 		531AF6CF206AF5530016776D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CAS8L34VEY;
 				INFOPLIST_FILE = libraryTrackingTests/Info.plist;
